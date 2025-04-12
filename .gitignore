@@ -1,0 +1,5 @@
+data/
+__pycache__/
+haarcascade_frontalface_default.xml
+attendance.csv
+.env
