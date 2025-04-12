@@ -17,7 +17,7 @@ class Train:
             "times new roman", 25, "bold"), bg="white", fg="red")
         title_lbl.place(x=0, y=0, width=1300, height=45)
 
-        img_top = Image.open(r"images\facerecognition.png")
+        img_top = Image.open("images/facerecognition.png")
         img_top = img_top.resize((1300,275))
         self.photoimage_top = ImageTk.PhotoImage(img_top)
 
@@ -28,7 +28,7 @@ class Train:
             "times new roman", 25, "bold"), bg="darkblue", fg="white")
         b1_1.place(x=0, y=320, width=1300, height=60)
 
-        img_bottom = Image.open(r"images\facial-recognition.jpg")
+        img_bottom = Image.open("images/facial-recognition.jpg")
         img_bottom = img_bottom.resize((1300,300))
         self.photoimage_bottom = ImageTk.PhotoImage(img_bottom)
 

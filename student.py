@@ -12,37 +12,37 @@ class Student:
         self.root.title("Face Recognition Based Standard Attendance System")
 
         #variables
-        self.var_dep = StringVar();
-        self.var_course = StringVar();
-        self.var_year = StringVar();
-        self.var_semester = StringVar();
-        self.var_std_id = StringVar();
-        self.var_std_name = StringVar();
-        self.var_section = StringVar();
-        self.var_roll = StringVar();
-        self.var_gender = StringVar();
-        self.var_dob = StringVar();
-        self.var_email = StringVar();
-        self.var_phone = StringVar();
-        self.var_address = StringVar();
-        self.var_teacher = StringVar();
+        self.var_dep = StringVar()
+        self.var_course = StringVar()
+        self.var_year = StringVar()
+        self.var_semester = StringVar()
+        self.var_std_id = StringVar()
+        self.var_std_name = StringVar()
+        self.var_section = StringVar()
+        self.var_roll = StringVar()
+        self.var_gender = StringVar()
+        self.var_dob = StringVar()
+        self.var_email = StringVar()
+        self.var_phone = StringVar()
+        self.var_address = StringVar()
+        self.var_teacher = StringVar()
 
         img = Image.open(
-            r"C:\Users\shrij\OneDrive\Desktop\IDP\images\student1.jpeg")
+            "images/student1.jpeg")
         img = img.resize((500, 150))
         self.photoimage = ImageTk.PhotoImage(img)
         f_lbl = Label(self.root, image=self.photoimage)
         f_lbl.place(x=0, y=0, width=445, height=120)
 
         img2 = Image.open(
-            r"C:\Users\shrij\OneDrive\Desktop\IDP\images\student2.jpeg")
+            "images/student2.jpeg")
         img2 = img2.resize((500, 150))
         self.photoimage2 = ImageTk.PhotoImage(img2)
         f_lbl = Label(self.root, image=self.photoimage2)
         f_lbl.place(x=440, y=0, width=450, height=120)
 
         img3 = Image.open(
-            r"C:\Users\shrij\OneDrive\Desktop\IDP\images\student3.jpeg")
+            "images/student3.jpeg")
         img3 = img3.resize((500, 150))
         self.photoimage3 = ImageTk.PhotoImage(img3)
         f_lbl = Label(self.root, image=self.photoimage3)
@@ -50,7 +50,7 @@ class Student:
 
         #background
         img4 = Image.open(
-            r"images\back.jpg")
+            "images/back.jpg")
         img4 = img4.resize((1500, 800))
         self.photoimage4 = ImageTk.PhotoImage(img4)
         bg_img = Label(self.root, image=self.photoimage4)
@@ -69,7 +69,7 @@ class Student:
         left_frame.place(x=5, y=3, width=640, height=487)
 
         img_left = Image.open(
-            r"images\student.jpg")
+            "images/student.jpg")
         img_left = img_left.resize((300, 100))
         self.photoimage_left = ImageTk.PhotoImage(img_left)
 
@@ -252,7 +252,7 @@ class Student:
         right_frame.place(x=650, y=3, width=600, height=487)
 
         img_right = Image.open(
-            r"C:\Users\shrij\OneDrive\Desktop\IDP\images\student1.jpeg")
+            "images/student1.jpeg")
         img_right = img_right.resize((300, 100))
         self.photoimage_right = ImageTk.PhotoImage(img_right)
 

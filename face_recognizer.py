@@ -20,7 +20,7 @@ class Face_Recognition:
         title_lbl.place(x=0, y=0, width=1300, height=45)
 
         # left image
-        img_top = Image.open(r"images\faceRecognize.png")
+        img_top = Image.open("images/faceRecognize.png")
         img_top = img_top.resize((650,650))
         self.photoimage_top = ImageTk.PhotoImage(img_top)
 
@@ -28,7 +28,7 @@ class Face_Recognition:
         f_lbl.place(x=0, y=45, width=650, height=650)
 
         # right image
-        img_bottom = Image.open(r"images\facial_recognition.jpg")
+        img_bottom = Image.open("images/facial_recognition.jpg")
         img_bottom = img_bottom.resize((650,650))
         self.photoimage_bottom = ImageTk.PhotoImage(img_bottom)
 

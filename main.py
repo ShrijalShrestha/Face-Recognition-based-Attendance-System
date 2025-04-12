@@ -14,21 +14,21 @@ class Face_Recognition_Attendance_System:
         self.root.title("Face Recognition Based Standard Attendance System")
 
         img = Image.open(
-            r"images\ap.jpg")
+            "images/ap.jpg")
         img = img.resize((500, 130))
         self.photoimage = ImageTk.PhotoImage(img)
         f_lbl = Label(self.root, image=self.photoimage)
         f_lbl.place(x=0, y=0, width=389, height=130)
 
         img2 = Image.open(
-            r"images\facial.jpg")
+            "images/facial.jpg")
         img2 = img2.resize((500, 130))
         self.photoimage2 = ImageTk.PhotoImage(img2)
         f_lbl = Label(self.root, image=self.photoimage2)
         f_lbl.place(x=389, y=0, width=500, height=130)
 
         img3 = Image.open(
-            r"images\system.jpg")
+            "images/system.jpg")
         img3 = img3.resize((500, 130))
         self.photoimage3 = ImageTk.PhotoImage(img3)
         f_lbl = Label(self.root, image=self.photoimage3)
@@ -36,7 +36,7 @@ class Face_Recognition_Attendance_System:
 
         #background
         img4 = Image.open(
-            r"images\back.jpg")
+            "images/back.jpg")
         img4 = img4.resize((1530, 710))
         self.photoimage4 = ImageTk.PhotoImage(img4)
         bg_img = Label(self.root, image=self.photoimage4)
@@ -48,7 +48,7 @@ class Face_Recognition_Attendance_System:
 
         #student
         img5 = Image.open(
-            r"images\student.jpg")
+            "images/student.jpg")
         img5 = img5.resize((220, 220))
         self.photoimage5 = ImageTk.PhotoImage(img5)
 
@@ -61,7 +61,7 @@ class Face_Recognition_Attendance_System:
 
         # Face detector
         img6 = Image.open(
-            r"images\access.jpg")
+            "images/access.jpg")
         img6 = img6.resize((220, 220))
         self.photoimage6 = ImageTk.PhotoImage(img6)
         b1 = Button(bg_img, image=self.photoimage6, cursor="hand2", command=self.face_data)
@@ -73,7 +73,7 @@ class Face_Recognition_Attendance_System:
 
         # Attendance
         img7 = Image.open(
-            r"images\night.jpg")
+            "images/night.jpg")
         img7 = img7.resize((220, 220))
         self.photoimage7 = ImageTk.PhotoImage(img7)
         b1 = Button(bg_img, image=self.photoimage7, cursor="hand2", command=self.attendance_data)
@@ -85,7 +85,7 @@ class Face_Recognition_Attendance_System:
 
         #Helpdesk
         img8 = Image.open(
-            r"C:\Users\shrij\OneDrive\Desktop\IDP\images\helpdesk.jpg")
+            "images/helpdesk.jpg")
         img8 = img8.resize((220, 220))
         self.photoimage8 = ImageTk.PhotoImage(img8)
         b1 = Button(bg_img, image=self.photoimage8, cursor="hand2")
@@ -97,7 +97,7 @@ class Face_Recognition_Attendance_System:
 
         #Photos data
         img9 = Image.open(
-            r"C:\Users\shrij\OneDrive\Desktop\IDP\images\photos.jpg")
+            "images/photos.jpg")
         img9 = img9.resize((220, 220))
         self.photoimage9 = ImageTk.PhotoImage(img9)
         b1 = Button(bg_img, image=self.photoimage9, cursor="hand2", command=self.open_img)
@@ -109,7 +109,7 @@ class Face_Recognition_Attendance_System:
 
         #Train data        
         img10 = Image.open(
-            r"C:\Users\shrij\OneDrive\Desktop\IDP\images\training.jpg")
+            "images/training.jpg")
         img10 = img10.resize((220, 220))
         self.photoimage10 = ImageTk.PhotoImage(img10)
         b1 = Button(bg_img, image=self.photoimage10, cursor="hand2", command=self.train_data)
