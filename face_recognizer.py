@@ -4,9 +4,7 @@ import numpy as np
 from time import strftime
 from datetime import datetime
 from tkinter import *
-from tkinter import ttk
 from PIL import Image, ImageTk
-from tkinter import messagebox
 import mysql.connector
 
 class Face_Recognition:
@@ -90,7 +88,6 @@ class Face_Recognition:
                 my_cursor.execute("select Department from students where Student_ID="+str(id))
                 d = my_cursor.fetchone()
                 d = d[0]
-
 
                 if confidence > 77:
                     cv2.putText(img, f"Student Id:{i}", (x, y-75), cv2.FONT_HERSHEY_COMPLEX, 0.8, (255, 255, 0), 2)
